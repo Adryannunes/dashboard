@@ -1,3 +1,5 @@
+<%= line_chart Despesa.group_by_day(:date).count %>
+
 <table>
   <thead>
     <tr>
@@ -18,3 +20,5 @@
   <% end %>
   </tbody>
 </table>
+
+<%= pie_chart Despesa.group(:date).count %>
