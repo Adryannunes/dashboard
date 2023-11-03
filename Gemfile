@@ -29,6 +29,11 @@ gem "jbuilder"
 
 gem "sass-rails"
 
+gem 'chartkick', '~>3.0', '>=3.0.1' 
+
+gem 'groupdate', '~> 4.1'
+
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
