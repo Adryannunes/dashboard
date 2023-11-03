@@ -237,10 +237,10 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  chartkick (~> 3.0, >= 3.0.1)
+  chartkick
   debug
   faker (~> 3.2, >= 3.2.1)
-  groupdate (~> 4.1)
+  groupdate
   importmap-rails
   jbuilder
   puma (~> 5.0)
