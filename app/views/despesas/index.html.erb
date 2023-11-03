@@ -1,6 +1,12 @@
 <%= line_chart Despesa.group_by_day(:date).count %>
 
-<table>
+<%= column_chart Despesa.group_by_day_of_week(:date, format: "%a").count %>
+
+<%= bar_chart Despesa.group(:date).sum(:date) %>
+
+<%= area_chart Despesa.group_by_minute(:date).maximum(:date) %>
+<!--
+ <table>
   <thead>
     <tr>
      <th>Date</th>
@@ -20,5 +26,4 @@
   <% end %>
   </tbody>
 </table>
-
-<%= pie_chart Despesa.group(:date).count %>
+-->
