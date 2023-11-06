@@ -4,3 +4,5 @@
      type: Despesa.types.keys.sample, quantia: Faker::Number.between(from: 10.00, to: 50.00))
   end 
 end 
+
+
