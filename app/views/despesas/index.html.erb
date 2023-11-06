@@ -1,3 +1,4 @@
+<h1>Dashboard TEST<h1>
 <%= line_chart Despesa.group_by_day(:date).count %>
 
 <%= column_chart Despesa.group_by_day_of_week(:date, format: "%a").count %>
@@ -6,7 +7,7 @@
 
 <%= line_chart Despesa.group(:quantia).group_by_week(:date).count %>
 
-<%= area_chart Despesa.group_by_minute(:date).maximum(:quantia) %>
+
 <!--
  <table>
   <thead>
