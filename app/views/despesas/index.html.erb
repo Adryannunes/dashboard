@@ -9,7 +9,7 @@
 <%= line_chart Despesa.group(:quantia).group_by_week(:date).count %>
 
 
-<!--
+
  <table>
   <thead>
     <tr>
@@ -22,12 +22,12 @@
   <tbody>
   <% @despesas.each do |e| %>
    <tr>
-    <td><%= e.date %></td>
-    <td><%= e.description %></td>
-    <td><%= e.type %></td>
-    <td><%= e.quantia %></td>
+    <td> <%= e.date %> </td>
+    <td> <%= e.description %> </td>
+    <td> <%= e.type %> </td>
+    <td> <%= e.quantia %> </td>
    </tr>
   <% end %>
   </tbody>
 </table>
--->
+
